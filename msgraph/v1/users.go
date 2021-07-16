@@ -276,7 +276,7 @@ func (s *UsersService) AssignLicense(ctx context.Context, userID string, addLice
 		"removeLicenses": removeLicenses,
 	}
 
-	u := msgraph.URL(Users, userID).Append(AppRoleAssignments).Build()
+	u := msgraph.URL(Users, userID).Append(AssignLicense).Build()
 	req, err := s.client.NewRequest(http.MethodPost, u, requestData)
 	if err != nil {
 		return nil, err
