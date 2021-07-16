@@ -262,3 +262,31 @@ func (s *UsersService) DeleteAppRoleAssignment(ctx context.Context, userID, appR
 
 	return nil
 }
+
+// Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
+//
+//
+// POST /users/{id | userPrincipalName}/assignLicense
+
+// MS Graph API doc:
+// https://docs.microsoft.com/en-us/graph/api/user-assignlicense?view=graph-rest-1.0&tabs=http
+func (s *UsersService) AssignLicense(ctx context.Context, userID string, addLicenses *[]AssignedLicense, removeLicenses []string) (*UserResponse, error) {
+	requestData := map[string]interface{}{
+		"addLicenses":    addLicenses,
+		"removeLicenses": removeLicenses,
+	}
+
+	u := msgraph.URL(Users, userID).Append(AppRoleAssignments).Build()
+	req, err := s.client.NewRequest(http.MethodPost, u, requestData)
+	if err != nil {
+		return nil, err
+	}
+
+	userResp := new(UserResponse)
+	_, err = s.client.Do(ctx, req, userResp)
+	if err != nil {
+		return nil, err
+	}
+
+	return userResp, nil
+}

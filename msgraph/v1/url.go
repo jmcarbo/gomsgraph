@@ -5,6 +5,7 @@ import "github.com/jmcarbo/gomsgraph/msgraph"
 const (
 	Users                  msgraph.UrlPart = "users"
 	Groups                 msgraph.UrlPart = "groups"
+	AssignLicense          msgraph.UrlPart = "assignLicense"
 	AppRoleAssignments     msgraph.UrlPart = "appRoleAssignments"
 	SchemaExtensions       msgraph.UrlPart = "schemaExtensions"
 	DirectoryRoles         msgraph.UrlPart = "directoryRoles"
