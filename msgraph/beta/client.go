@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/michaljirman/gomsgraph/msgraph"
+	"github.com/jmcarbo/gomsgraph/msgraph"
 )
 
 const (

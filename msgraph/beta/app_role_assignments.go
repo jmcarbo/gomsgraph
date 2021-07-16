@@ -1,7 +1,7 @@
 package beta
 
 import (
-	. "github.com/michaljirman/gomsgraph/msgraph/beta/models"
+	. "github.com/jmcarbo/gomsgraph/msgraph/beta/models"
 )
 
 type AppRoleAssignmentsService service

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/michaljirman/gomsgraph/msgraph"
-	. "github.com/michaljirman/gomsgraph/msgraph/v1/models"
+	"github.com/michaljirman/jmcarbo/msgraph"
+	. "github.com/michaljirman/jmcarbo/msgraph/v1/models"
 )
 
 type GroupsService service

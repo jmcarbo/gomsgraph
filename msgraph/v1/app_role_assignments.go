@@ -1,7 +1,7 @@
 package v1
 
 import (
-	. "github.com/michaljirman/gomsgraph/msgraph/v1/models"
+	. "github.com/jmcarbo/gomsgraph/msgraph/v1/models"
 )
 
 type AppRoleAssignmentsService service

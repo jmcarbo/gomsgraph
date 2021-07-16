@@ -6,8 +6,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/michaljirman/gomsgraph/msgraph"
-	. "github.com/michaljirman/gomsgraph/msgraph/beta/models"
+	"github.com/michaljirman/jmcarbo/msgraph"
+	. "github.com/michaljirman/jmcarbo/msgraph/beta/models"
 )
 
 type UsersService service

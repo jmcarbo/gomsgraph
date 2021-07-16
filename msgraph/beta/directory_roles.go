@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/michaljirman/gomsgraph/msgraph"
-	. "github.com/michaljirman/gomsgraph/msgraph/beta/models"
+	"github.com/jmcarbo/gomsgraph/msgraph"
+	. "github.com/jmcarbo/gomsgraph/msgraph/beta/models"
 )
 
 type DirectoryRolesService service

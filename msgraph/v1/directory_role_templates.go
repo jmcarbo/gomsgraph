@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/michaljirman/gomsgraph/msgraph"
-	. "github.com/michaljirman/gomsgraph/msgraph/v1/models"
+	"github.com/jmcarbo/gomsgraph/msgraph"
+	. "github.com/jmcarbo/gomsgraph/msgraph/v1/models"
 )
 
 type DirectoryRoleTemplatesService service

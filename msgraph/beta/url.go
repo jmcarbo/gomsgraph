@@ -1,6 +1,6 @@
 package beta
 
-import "github.com/michaljirman/gomsgraph/msgraph"
+import "github.com/jmcarbo/gomsgraph/msgraph"
 
 const (
 	Users                  msgraph.UrlPart = "users"

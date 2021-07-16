@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/michaljirman/gomsgraph/msgraph"
-	. "github.com/michaljirman/gomsgraph/msgraph/beta/models"
+	"github.com/jmcarbo/gomsgraph/msgraph"
+	. "github.com/jmcarbo/gomsgraph/msgraph/beta/models"
 )
 
 type SchemaExtensionsService service
